@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>baper account</title>
+  </head>
+  <body>
+    <header class="text-center mt-5 text-4xl">
+      <h1>
+        Lets get some
+        <span class="text-violet-700 text-center">MOOOONEY</span>!!!
+      </h1>
+    </header>
+
+    <main>
+      <section class="mt-6">
+        <div
+          class="grid grid-cols-3 gap-10 w-9/12 mx-auto text-white font-semibold"
+        >
+          <div class="bg-orange-400 p-8 rounded-xl">
+            <h4 class="text-2xl">Deposit</h4>
+            <h2 class="text-4xl">$ <span id="deposit-total">00</span></h2>
+          </div>
+          <div class="bg-green-400 p-8 rounded-xl">
+            <h4 class="text-2xl">withdraw</h4>
+            <h2 class="text-4xl">$ <span id="withdraw-total">00</span></h2>
+          </div>
+          <div class="bg-pink-400 p-8 rounded-xl">
+            <h4 class="text-2xl">balance</h4>
+
+            <h2 class="text-4xl">$ <span id="balance-total">1000</span></h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- deposit and withdraw -->
+      <section class="mt-10">
+        <!-- main div -->
+        <div class="grid grid-cols-2 gap-12 w-9/12 mx-auto">
+          <div class="bg-red-600 rounded-xl p-8">
+            <h4 class="text-3xl">please deposites</h4>
+            <input
+              id="deposit-field"
+              class="w-9/12 block p-3 rounded-md mt-4"
+              type="text"
+              placeholder="please deposit your money"
+            />
+
+            <button
+              id="deposit-btn"
+              class="bg-orange-500 mt-5 rounded-lg p-3 hover:bg-green-500"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-fuchsia-700 rounded-xl p-8">
+            <h4 class="text-3xl">please withdraw</h4>
+            <input
+              id="withdraw-field"
+              class="w-9/12 block p-3 rounded-md mt-4"
+              type="text 
+            "
+              placeholder="withdraw your money"
+            />
+
+            <button
+              id="withdraw-btn"
+              class="bg-orange-500 mt-5 rounded-lg p-3 hover:bg-green-500"
+            >
+              withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./deposit.js"></script>
+    <script src="./withdraw.js"></script>
+  </body>
+</html>
