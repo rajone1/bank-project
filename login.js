@@ -7,7 +7,7 @@ document.getElementById("btn-submit").addEventListener("click", function () {
   const password = getpass.value;
 
   if (email === "shaon@gmail" && password == "shaon") {
-    window.location.href = "/new/bank.html";
+    window.location.href = "./bank.html";
   } else {
     alert("insert email and password");
   }
